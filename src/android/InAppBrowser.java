@@ -416,6 +416,7 @@ public class InAppBrowser extends CordovaPlugin {
      * @param jsonObject
      */
     public String showWebPage(final String url, HashMap<String, Boolean> features) {
+        Log.v(LOG_TAG, "Showing web page " + url);
         // Determine if we should hide the location bar.
         showLocationBar = true;
         openWindowHidden = false;
